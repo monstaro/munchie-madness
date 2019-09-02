@@ -9,8 +9,19 @@ var snackButton = document.querySelector(".button")
 
 var newCard = document.querySelector(".grocery-list")
 
+var deleteButton = document.querySelector(".deleteMe")
+
 
 snackButton.addEventListener('click', openCard);
+
+newCard.addEventListener('click', closeCard);
+
+function closeCard(event){
+	if (event.target.classList.contains('deleteMe')) {
+		event.target.closest('section').remove();
+	}
+}
+
 
 function openCard(){
 	event.preventDefault();
@@ -20,7 +31,7 @@ function openCard(){
 ${snackName.value}
 </h1>
 <p class="snack-desc-card">
-${snackDesc.value}</p>
+${snackDesc.value}</p><input type="button" class="deleteMe" value="delete me">
 </section>`)
 }
 
@@ -29,23 +40,6 @@ ${snackDesc.value}</p>
 
 
 
-
-// function newCard(snackName, snackDesc){
-// 	return('<div class="new-card">' +
-//     '<h4>' +
-//       snackItem.value +
-//     '</h4>' +
-//     '<p>' +
-// 			 snackDesc.value +
-// 		 '</p>'
-//   '</div>');
-// }
-//
-// function display () {
-//     var displayCard = document.querySelector('.maybe');
-//     displayCard.innerHTML = newCard();
-//     window.setTimeout(animateInBox, 300);
-// }
 
 //Iteration 2
 // Edit the HTML of the dynamic snack cards to include a DELETE button. When the user clicks the DELETE button, that specific CARD is removed from the DOM
