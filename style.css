@@ -67,19 +67,34 @@ section {
 	flex-direction: column;
 	height: 300px;
 	width: 650px;
-	background-color: blue;
+	background-color: #a83281;
 	justify-content: center;
 	margin-top: 10px;
+	border: 2px dotted white;
 	border-radius: 5px;
 }
 
 .snack-name-card {
-	font-size: 48px;
+	font-size: 4em;
 	color: white;
 }
 
 .snack-desc-card {
 	width: 50%;
-	height: 50%;
+	height: auto;
 	color: white;
+	padding: 5px;
+	border: 4px double pink;
+
+}
+
+.deleteMe {
+	font-family: Anton;
+	background-color: white;
+	color: #6497f5;
+	border-radius: 10px;
+	width: 50%;
+	font-size: 2em;
+	letter-spacing: 0.5em;
+	text-align: center;
 }

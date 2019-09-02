@@ -31,7 +31,7 @@ function openCard(){
 ${snackName.value}
 </h1>
 <p class="snack-desc-card">
-${snackDesc.value}</p><input type="button" class="deleteMe" value="delete me">
+${snackDesc.value}</p><input type="button" class="deleteMe" value=" delete me">
 </section>`)
 }
 
